@@ -6,10 +6,15 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 
 namespace Module16HW.Tests
+
+    // создан класс для тестирования класса "Calcultor"
 {
     [TestFixture]
     public class CalculatorTests
     {
+
+        // тестирование функции сложения
+
         [Test]
         public void AdditionMustReturnCorrectValue()
         {
@@ -17,6 +22,8 @@ namespace Module16HW.Tests
 
             Assert.True(calculator.Additional(10, 15) == 25);
         }
+
+        // тестирование функции вычитания
 
         [Test]
         public void SubtractionMustReturnCorrectValue()
@@ -26,6 +33,8 @@ namespace Module16HW.Tests
             Assert.True(calculator.Subtraction(40, 20) == 20);
         }
 
+        // тестирование функции умножения
+
         [Test]
         public void MultiplicationMustReturnCorrectValue()
         {
@@ -34,6 +43,8 @@ namespace Module16HW.Tests
             Assert.True(calculator.Multiplication(5, 6) == 30);
         }
 
+        // тестирование функции деления
+
         [Test]
         public void DivisionMustReturnCorrectValue()
         {
@@ -41,6 +52,8 @@ namespace Module16HW.Tests
 
             Assert.True(calculator.Division(30, 10) == 3);
         }
+
+        // тестирование функции невозможности деления на 0
 
         [Test]
         public void Division_MustThrowException()
